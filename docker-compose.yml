@@ -1,0 +1,9 @@
+rs2v:
+  image: rs2v/docker
+  restart: always
+  ports:
+    - 7787:7787/tcp
+    - 27015:27015/udp
+    - 8080:8080/udp
+  volumes:
+    - ./rs2v:/home/steam/rs2v/
